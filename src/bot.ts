@@ -19,7 +19,7 @@ export function initTelegramBot() {
         const telegramId = msg.from.id;
         // console.log("-telegramId=", telegramId);
         const userName = msg.from.username;
-        const gameUrl = `https://premnarayanp.github.io/chat-app?username=${userName}&telegramId=${telegramId}`;
+        const gameUrl = `https://bucolic-centaur-38bb0c.netlify.app?username=${userName}&telegramId=${telegramId}`;
 
         try {
             // Check if the user is already in the Supabase DB
