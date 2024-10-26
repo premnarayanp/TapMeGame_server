@@ -6,6 +6,8 @@ import { initTelegramBot } from './bot';
 import { createYoga } from 'graphql-yoga';
 import { schema } from './QL_Schema';
 
+//"start": "nodemon --exec ts-node src/index.ts",
+
 const port = process.env.PORT || 3000;
 const app = express();
 
@@ -27,5 +29,5 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+    console.log(`Server is running on port:${port}`);
 });
