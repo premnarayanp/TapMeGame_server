@@ -53,8 +53,6 @@ export function initTelegramBot() {
                 }
 
 
-
-                //const gameUrl = `https://premnarayanp.github.io/chat-app?username=${userName}&userId=${telegramId}`;
                 await bot.sendMessage(chatId, `Welcome, ${userName}! Click the button below to start the game.`, {
                     reply_markup: {
                         inline_keyboard: [
